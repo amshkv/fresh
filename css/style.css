@@ -1018,6 +1018,9 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 0 10px 0px 34px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1035,8 +1038,12 @@ body {
   transform: scale(1.1);
 }
 
+.map__item:nth-child(1) {
+  padding-top: 14px;
+}
+
 .map__item:nth-child(2) {
-  padding-bottom: 0px;
+  padding-bottom: 5px;
 }
 
 .map__item:nth-child(2) .map__item-text-strong {
@@ -1044,7 +1051,7 @@ body {
 }
 
 .map__item:nth-child(3) {
-  padding-bottom: 8px;
+  padding-bottom: 10px;
 }
 
 .map__item:nth-child(4) {
