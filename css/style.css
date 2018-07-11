@@ -45,16 +45,16 @@
     }
   }
   10%, 20% {
-    -webkit-transform: scale(0.95) rotate(-3deg);
-    transform: scale(0.95) rotate(-3deg);
+    -webkit-transform: scale(0.98) rotate(-1deg);
+    transform: scale(0.98) rotate(-1deg);
   }
   30%, 50%, 70%, 90% {
-    -webkit-transform: scale(1.05) rotate(3deg);
-    transform: scale(1.05) rotate(3deg);
+    -webkit-transform: scale(1.02) rotate(1deg);
+    transform: scale(1.02) rotate(1deg);
   }
   40%, 60%, 80% {
-    -webkit-transform: scale(1.05) rotate(-3deg);
-    transform: scale(1.05) rotate(-3deg);
+    -webkit-transform: scale(1.02) rotate(-1deg);
+    transform: scale(1.02) rotate(-1deg);
   }
   100% {
     -webkit-transform: scale(1) rotate(0);
@@ -68,16 +68,16 @@
     }
   }
   10%, 20% {
-    -webkit-transform: scale(0.95) rotate(-3deg);
-    transform: scale(0.95) rotate(-3deg);
+    -webkit-transform: scale(0.98) rotate(-1deg);
+    transform: scale(0.98) rotate(-1deg);
   }
   30%, 50%, 70%, 90% {
-    -webkit-transform: scale(1.05) rotate(3deg);
-    transform: scale(1.05) rotate(3deg);
+    -webkit-transform: scale(1.02) rotate(1deg);
+    transform: scale(1.02) rotate(1deg);
   }
   40%, 60%, 80% {
-    -webkit-transform: scale(1.05) rotate(-3deg);
-    transform: scale(1.05) rotate(-3deg);
+    -webkit-transform: scale(1.02) rotate(-1deg);
+    transform: scale(1.02) rotate(-1deg);
   }
   100% {
     -webkit-transform: scale(1) rotate(0);
@@ -180,7 +180,6 @@ body {
 .header__subtitle {
   margin: 13px 0 0;
   font-weight: 400;
-  text-transform: uppercase;
   font-size: 14px;
   text-align: center;
   text-shadow: 0px 2px 13px #FFFFFF, 0px 2px 11px #FFFFFF;
@@ -577,7 +576,7 @@ body {
   width: 282px;
   height: 282px;
   border-radius: 100%;
-  margin-top: 86px;
+  margin-top: 90px;
 }
 
 .speaker__photo-img {
@@ -608,7 +607,7 @@ body {
 .speaker__bio-list {
   list-style: none;
   padding: 0;
-  margin: 62px 0 0;
+  margin: 56px 0 0;
 }
 
 .speaker__bio-item {
@@ -617,8 +616,9 @@ body {
   font-size: 18px;
   letter-spacing: 0.260357px;
   color: #000000;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
   position: relative;
+  padding-left: 34px;
 }
 
 .speaker__bio-item:before {
@@ -628,6 +628,9 @@ body {
   font-size: 18px;
   letter-spacing: 0.260357px;
   color: #000000;
+  position: absolute;
+  left: 9px;
+  top: 0px;
 }
 
 .speaker__bio-strong {
@@ -825,7 +828,7 @@ body {
 }
 
 .benefits__list {
-  width: calc(100% - 515px);
+  width: calc(100% - 505px);
   padding: 0;
   margin: 65px 0 0;
   list-style: none;
@@ -839,6 +842,8 @@ body {
 .benefits__item {
   margin: 0 0 22px;
   line-height: 1;
+  position: relative;
+  padding-left: 20px;
 }
 
 .benefits__item:before {
@@ -848,7 +853,9 @@ body {
   font-size: 18px;
   letter-spacing: 0.231429px;
   color: #000000;
-  margin-right: 8px;
+  position: absolute;
+  left: 0;
+  top: 0px;
 }
 
 .question {
@@ -1060,7 +1067,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 10px 10px 34px;
+  padding: 0 10px 0px 34px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #000000;
@@ -1078,7 +1085,7 @@ body {
 }
 
 .map__item:nth-child(2) {
-  padding-bottom: 26px;
+  padding-bottom: 0px;
 }
 
 .map__item:nth-child(2) .map__item-text-strong {
@@ -1086,22 +1093,24 @@ body {
 }
 
 .map__item:nth-child(3) {
-  padding-bottom: 16px;
+  padding-bottom: 8px;
 }
 
 .map__item:nth-child(4) {
-  padding-bottom: 36px;
+  padding-bottom: 32px;
 }
 
 .map__item-number {
   font-weight: 700;
   font-size: 78px;
-  line-height: 1;
+  line-height: 70px;
 }
 
 .map__item-number--small {
   font-size: 52px;
+  line-height: 70px;
   letter-spacing: -2.06747px;
+  margin-bottom: -7px;
 }
 
 .map__item-text {
@@ -1109,8 +1118,8 @@ body {
   font-size: 22px;
   line-height: 1;
   color: #333333;
-  margin-top: 4px;
-  margin-bottom: 18px;
+  margin-top: -9px;
+  margin-bottom: 16px;
 }
 
 .map__item-text-strong {
@@ -1596,7 +1605,6 @@ body {
   line-height: 1;
   font-size: 14px;
   text-align: center;
-  text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 18px;
   margin-bottom: 0;
