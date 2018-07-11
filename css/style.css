@@ -138,7 +138,7 @@ body {
   font-size: 18px;
   line-height: 1.2;
   font-weight: 400;
-  font-family: Muller;
+  font-family: Muller, sans-serif;
   margin: 0;
   padding: 0;
   min-width: 1020px;
@@ -892,7 +892,6 @@ body {
   font-weight: bold;
   line-height: normal;
   font-size: 24px;
-  padding-top: 8px;
   color: #637C98;
   position: relative;
   margin: 0;
@@ -905,7 +904,7 @@ body {
   background: url("../img/arrow.svg") center no-repeat;
   position: absolute;
   right: 17px;
-  top: 58px;
+  top: 55px;
 }
 
 .question__item:hover .question__item-title:after {
@@ -1019,9 +1018,6 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   padding: 0 10px 0px 34px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1073,7 +1069,7 @@ body {
   font-size: 22px;
   line-height: 1;
   color: #333333;
-  margin-top: -9px;
+  margin-top: -5px;
   margin-bottom: 16px;
 }
 
@@ -1419,7 +1415,7 @@ body {
   line-height: 22px;
   font-size: 16px;
   color: #FFFFFF;
-  margin-top: 32px;
+  margin-top: 25px;
 }
 
 .place__address {
