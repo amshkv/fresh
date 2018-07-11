@@ -302,7 +302,7 @@ body {
 
 .main-block__info {
   margin-top: 27px;
-  max-width: 380px;
+  width: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,20 +317,6 @@ body {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.main-block__info:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.77);
-  mix-blend-mode: normal;
-  -webkit-filter: blur(48.4042px);
-  filter: blur(48.4042px);
-  border-radius: 8px;
 }
 
 .main-block__info:after {
@@ -353,9 +339,6 @@ body {
   color: #D52343;
   position: relative;
   text-align: left;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
 }
 
 .main-block__info-text {
@@ -436,21 +419,6 @@ body {
   height: 57px;
   font-size: 15px;
   line-height: 15px;
-}
-
-.button:after {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 14px;
-  height: 100%;
-  background: #A12339;
-  mix-blend-mode: normal;
-  opacity: 0.85;
-  -webkit-filter: blur(27.1828px);
-  filter: blur(27.1828px);
-  border-radius: 35.5px;
-  z-index: -1;
 }
 
 .video {
@@ -1583,6 +1551,7 @@ body {
 .footer__logo-img {
   display: block;
   width: 201px;
+  height: 55px;
 }
 
 .footer__title {
@@ -1746,7 +1715,7 @@ body {
 .date:before {
   content: '';
   position: absolute;
-  top: -1px;
+  top: -5px;
   left: 53%;
   width: 3px;
   height: 33px;
@@ -1871,6 +1840,7 @@ body {
   font-weight: 300;
   position: relative;
   padding-left: 16px;
+  cursor: pointer;
 }
 
 .form__label:before {
@@ -1954,6 +1924,39 @@ body {
 
 #isAgree:checked + .form__label:after {
   opacity: 1;
+}
+
+@supports ((-webkit-filter: blur()) or (filter: blur())) {
+  .main-block__info:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.77);
+    mix-blend-mode: normal;
+    -webkit-filter: blur(48.4042px);
+    filter: blur(48.4042px);
+    border-radius: 8px;
+  }
+  .format__list-item:after {
+    content: '';
+    position: absolute;
+    width: 345px;
+    height: 65px;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    background: #8D96BB;
+    mix-blend-mode: normal;
+    opacity: 0.42;
+    z-index: -1;
+    -webkit-filter: blur(27.1828px);
+    filter: blur(27.1828px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
